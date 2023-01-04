@@ -105,7 +105,7 @@ def get_qualitative_examples_html(orig_sents, sys_sents, refs_sents):
         ),
         (
             'Simplifications with a high amount of paraphrasing',
-            lambda c, s, refs: get_levenshtein_similarity(c, s) / get_compression_ratio(c, s),
+            lambda c, s, refs: 2,
             lambda value: f'levenshtein_similarity={value:.2f}',
         ),
         (
